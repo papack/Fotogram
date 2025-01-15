@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+
+main {
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap:wrap;
+    gap:2px;
+}
+
+main img {
+    height: 200px;
+    width: 200px;
+}
+
+.lightbox {
+    display:none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+
+.lightbox .content{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background: hotpink;
+}
+
+
+.lightbox img {
+    height: 100%;
+    width: 100%;
+}
