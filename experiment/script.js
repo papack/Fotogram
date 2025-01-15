@@ -1,5 +1,8 @@
 "use strict";
 
+//global Index
+let currentIndex = 0; // Hält den Index des aktuellen Bildes
+
 //
 // Bild öffnen
 //
@@ -7,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const imgs = document.querySelectorAll("main img");
   const lightbox = document.querySelector(".lightbox");
   const lightboxImage = document.querySelector("#lightboxImage");
-  let currentIndex = 0; // Hält den Index des aktuellen Bildes
 
   imgs.forEach((img, index) => {
     img.addEventListener("click", (event) => {
@@ -24,8 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const imgs = document.querySelectorAll("main img");
   const lightboxImage = document.querySelector("#lightboxImage");
-  let currentIndex = 0; // Hält den Index des aktuellen Bildes initial auf 0
-
   const prevBtn = document.querySelector("#prev");
   const nextBtn = document.querySelector("#next");
 
